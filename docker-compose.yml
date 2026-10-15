@@ -14,6 +14,7 @@ services:
       - springboot-postgres-net
 
   backend:
+    platform: linux/amd64
     image: nischalsingana/docker-git-actions-backend:latest
     container_name: docker-springboot
     ports:
@@ -25,6 +26,7 @@ services:
       - springboot-postgres-net
 
   frontend:
+    platform: linux/amd64
     image: nischalsingana/docker-git-actions-frontend:latest
     container_name: docker-react
     ports:
